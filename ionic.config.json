@@ -1,0 +1,7 @@
+{
+  "name": "rickymorti-v2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
