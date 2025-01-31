@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SplashScreen } from '@capacitor/splash-screen';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,16 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {
+    this.showSplash();
+  }
+
+  async showSplash(){
+    // Show the splash for two seconds and then automatically hide it:
+      await SplashScreen.show({
+        showDuration: 3000,
+        autoHide: true,
+      });
+    }
+    
 }
