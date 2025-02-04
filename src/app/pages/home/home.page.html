@@ -15,6 +15,10 @@
       
       <ion-row>
         <ion-col routerLink="/character-detail/{{c.id}}" *ngFor="let c of characters" size-lg="6" size-md="6" size-sm="12" size="12">
+        <app-character-card [image]="c.image" [name]="c.name" [origin]="c.origin.name" [location]="c.location.name"></app-character-card>
+
+        
+          <!-- 
           <ion-card>
             <ion-grid>
               <ion-row>
@@ -31,6 +35,7 @@
               </ion-row>
             </ion-grid>
           </ion-card>
+        -->
         </ion-col>
       </ion-row>
     </ion-grid>
